@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Bioconstruccion con Paja,Construir casas con balas de paja,
+            madera, barro, rebocos naturales, bioconstrucción, arquitectura sostenible,
+            placas solares, respeto al medio ambiente.
+        </title>
+        <meta name="author" content="Laura Díaz Portela">
+        <meta name="description" content="Construir viviendas sontenibles, bioconstruccion con balas de paja y barro, madera, bambú. Respetar al medio ambiente, prebocos naturales.">
+        <meta name="Keywords" content="Bioconstrucción, arquitectura sostenoible, blas de paja y barro, madera, bambú, rebocos naturales, Sostenibilidad">
+        <meta charset="UTF-8">
+        <meta name="Robots" content="index, follow">
+        <meta name="revisit-after" content="5 days">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/index.css" rel="stylesheet" type="text/css"/>
+        <link href="css/cookies.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="shadow">
+        <div class="site-wrapper">
+            <div class="site-wrapper-inner">
+                <div class="cover-container">
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <h3 class="masthead-brand">Contruye Bíoconstrución</h3>
+
+                            <ul class="nav masthead-nav">
+                                <li class="active">
+                                    <a href="ventajas.html" target="_blank">Ventajas</a>
+                                </li>
+                                <li><a href="formulario.html">Contactar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="inner cover">
+                        <h1 class="cover-heading">Construye Bioconstrucción</h1>
+
+                        <p class="lead">Edificios con materiales de bajo impacto ambiental, 
+                            eficiencia energética, energías renovables...
+                        </p>
+
+                        <p class="lead"><a class="btn btn-lg btn-info" href="inicio.html">Leer mas</a></p>
+                    </div>
+
+                    <div class="mastfoot">
+                        <div class="inner">
+                            <!-- Validation -->
+
+
+                            <p>© 2016 Realizado por Laura Díaz~</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--//BLOQUE COOKIES-->
+            <div id="barraaceptacion" style="display: block;">
+                <div id="inner">
+                    Se informa a nuestros usuarios que utilizamos cookies propias y de 
+                    terceros para mejorar los servicios y facilitarle la navegación. 
+                    Si continúa navegando, consideramos que acepta su uso. 
+                    <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>Aceptar</b></a> | 
+                    <a href="politica_cookies.html" target="_blank" class="info">Más Info.</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script>
+                    if (getCookie('politica_cookies') !== "1") {
+                        document.getElementById("barraaceptacion").style.display = "block";
+                    } else {
+                        document.getElementById("barraaceptacion").style.display = "none";
+                    }
+                    function getCookie(c_name) {
+                        var c_value = document.cookie;
+                        var c_start = c_value.indexOf(" " + c_name + "=");
+                        if (c_start == -1) {
+                            c_start = c_value.indexOf(c_name + "=");
+                        }
+                        if (c_start == -1) {
+                            c_value = null;
+                        } else {
+                            c_start = c_value.indexOf("=", c_start) + 1;
+                            var c_end = c_value.indexOf(";", c_start);
+                            if (c_end == -1) {
+                                c_end = c_value.length;
+                            }
+                            c_value = unescape(c_value.substring(c_start, c_end));
+                        }
+                        return c_value;
+                    }
+
+                    function setCookie(c_name, value, exdays) {
+                        var exdate = new Date();
+                        exdate.setDate(exdate.getDate() + exdays);
+                        var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+                        document.cookie = c_name + "=" + c_value;
+                    }
+
+                    function PonerCookie() {
+                        setCookie('politica_cookies', '1', 365);
+                        document.getElementById("barraaceptacion").style.display = "none";
+                    }
+        </script>
+        <!--//FIN BLOQUE COOKIES-->
+    </body>
+</html>
+
